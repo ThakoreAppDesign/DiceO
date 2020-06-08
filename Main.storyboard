@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Dice_O_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenFeltBackground" translatesAutoresizingMaskIntoConstraints="NO" id="2g8-Wq-Ngp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.14105021949999999" green="0.61406570670000005" blue="0.057718448339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dice-O!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-46-uwI">
+                                <rect key="frame" x="72" y="76" width="271" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="100"/>
+                                <color key="textColor" red="0.60594880579999999" green="0.11350636930000001" blue="0.1245979592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many dice would you like to roll?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-T1-QAv">
+                                <rect key="frame" x="13" y="176" width="388" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
+                                <color key="textColor" red="0.60594880579999999" green="0.11350636930000001" blue="0.1245979592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Background" translatesAutoresizingMaskIntoConstraints="NO" id="9D0-hN-v3A">
+                                <rect key="frame" x="87" y="232" width="240" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdA-EZ-48V">
+                                <rect key="frame" x="140" y="246" width="135" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="50"/>
+                                <state key="normal" title="One Dice">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ypH-EM-idv" kind="show" id="EyK-Gi-6sV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Background" translatesAutoresizingMaskIntoConstraints="NO" id="VhI-Wu-Y7M">
+                                <rect key="frame" x="87" y="404" width="240" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gID-bo-tgC">
+                                <rect key="frame" x="133" y="418" width="149" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="50"/>
+                                <state key="normal" title="Two Dice">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CNb-wB-sVX" kind="show" id="CpU-dd-6J8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red Background" translatesAutoresizingMaskIntoConstraints="NO" id="zW7-88-Kso">
+                                <rect key="frame" x="119" y="605" width="177" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5y-9W-dpF">
+                                <rect key="frame" x="119" y="619" width="177" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="50"/>
+                                <state key="normal" title="Three Dice">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DEw-wM-wXk" kind="show" id="BTy-lg-Oqk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iXY-VR-H1a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16167" y="-17"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7RY-Nv-A8u">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="DEw-wM-wXk" customClass="ViewController" customModule="Dice_O_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOe-tq-cBr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenFeltBackground" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-0G-XOf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7u-NS-akm">
+                                <rect key="frame" x="142" y="701" width="132" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60594880579999999" green="0.11350636930000001" blue="0.1245979592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollButton2Pressed:" destination="CNb-wB-sVX" eventType="touchUpInside" id="bhD-Uv-tZC"/>
+                                    <action selector="rollButton3Pressed:" destination="DEw-wM-wXk" eventType="touchUpInside" id="pSz-d9-ts7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="MKX-rf-cQM">
+                                <rect key="frame" x="55" y="225" width="128" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="c9n-Px-vox">
+                                <rect key="frame" x="232" y="225" width="128" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="TpO-xs-xJM">
+                                <rect key="frame" x="143" y="389" width="128" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Three Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3q-mO-nfE">
+                                <rect key="frame" x="55" y="66" width="305" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="100"/>
+                                <color key="textColor" red="0.65098039220000004" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucc-PQ-GQ2">
+                                <rect key="frame" x="316" y="44" width="78" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="T8e-7u-4RG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="yHB-9C-dWV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9kv-Ai-A5P"/>
+                    <connections>
+                        <outlet property="dice4View" destination="MKX-rf-cQM" id="gc8-aT-fGg"/>
+                        <outlet property="dice5View" destination="c9n-Px-vox" id="pB6-kN-Jbr"/>
+                        <outlet property="dice6View" destination="TpO-xs-xJM" id="nKw-UC-6qN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKf-bc-tlM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15336.231884057972" y="-17.410714285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fdg-2a-x1v">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="ypH-EM-idv" customClass="ViewController" customModule="Dice_O_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c8i-Qe-1vB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenFeltBackground" translatesAutoresizingMaskIntoConstraints="NO" id="qab-uK-geB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="One Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2D-xS-Lui">
+                                <rect key="frame" x="71" y="58" width="272" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="100"/>
+                                <color key="textColor" red="0.65098039220000004" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="qPd-8c-wqc">
+                                <rect key="frame" x="143" y="389" width="128" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nb-Q4-dXW">
+                                <rect key="frame" x="141" y="715" width="132" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60594880579999999" green="0.11350636930000001" blue="0.1245979592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollButton1:" destination="9TP-6u-JmJ" eventType="touchUpInside" id="IsV-TL-Sy9"/>
+                                    <action selector="rollButton1Pressed:" destination="9TP-6u-JmJ" eventType="touchUpInside" id="ET7-3O-NZk"/>
+                                    <action selector="rollButton1Pressed:" destination="ypH-EM-idv" eventType="touchUpInside" id="Yih-17-xBe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSD-Gq-dsn">
+                                <rect key="frame" x="316" y="44" width="78" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="6J6-Bx-vOQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Csb-Vh-a4s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1mk-YO-B39"/>
+                    <connections>
+                        <outlet property="dice1View" destination="qPd-8c-wqc" id="P2W-Ny-f4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p65-BI-Wvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9TP-6u-JmJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-16184" y="660"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z7w-yb-wEO">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="CNb-wB-sVX" customClass="ViewController" customModule="Dice_O_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Jt-d2-yLz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenFeltBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-Bm-vGF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Two Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei1-lY-pEm">
+                                <rect key="frame" x="71" y="58" width="272" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="100"/>
+                                <color key="textColor" red="0.65098039220000004" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="OyS-lF-neV">
+                                <rect key="frame" x="71" y="389" width="128" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teY-gh-2EB">
+                                <rect key="frame" x="141" y="715" width="132" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60594880579999999" green="0.11350636930000001" blue="0.1245979592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollButton2Pressed:" destination="CNb-wB-sVX" eventType="touchUpInside" id="6oo-eG-LFT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WX8-vI-wiF">
+                                <rect key="frame" x="316" y="44" width="78" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BEr-9O-RyW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="ruQ-3m-Raz">
+                                <rect key="frame" x="215" y="389" width="128" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oPf-L9-oq4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Zo-31-Rf9"/>
+                    <connections>
+                        <outlet property="dice2View" destination="OyS-lF-neV" id="PEF-WR-yQy"/>
+                        <outlet property="dice3View" destination="ruQ-3m-Raz" id="J43-m1-SgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMH-Jr-wbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15336.231884057972" y="659.59821428571422"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="T8e-7u-4RG"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Dice_1" width="25" height="23.5"/>
+        <image name="GreenFeltBackground" width="99" height="67"/>
+        <image name="Red Background" width="73.5" height="48"/>
+    </resources>
+</document>
